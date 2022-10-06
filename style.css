@@ -1,0 +1,236 @@
+*{
+    padding : 0;
+    margin : 0;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    background-color: rgb(36, 13, 13);
+    padding: 6px;
+    justify-content: space-between;
+}
+
+/*  Navigation Bar: Logo and Image */
+#logo{
+    margin: -1px 10px;
+}
+#logo img{
+    height: 77px;
+    width: 68px;
+    object-fit: contain;
+}
+
+/*  Navigation Bar: List Sytling */
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content:"";
+    background-color: black;
+    position: absolute;
+    height : 100%;
+    width: 100%;
+    top:0px;
+    left : 0px;
+    z-index: -1;
+    opacity: 0.4;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color : white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    background-color: rgba(245, 245, 245, 0.504);
+    color : #29d9d5;
+}
+.btn{
+    padding : 6px 20px;
+    border : 2px solid  #29d9d5;
+    background-color: brown;
+    color:#29d9d5;
+    margin:17px;
+    font-size : 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+/* Section */
+
+
+/* Images */
+.maincontainer
+{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+.mainnn
+{
+    height: 80vh;
+    width: 80vw;
+    /* margin: 1px; */
+    margin: 1px 156px;
+
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    grid-template-rows: 20% 40% 40%;
+    gap: 15px;
+    
+    
+    
+    
+}
+.maindiv{
+    
+    
+    border: 1px solid red;
+    border-radius:5px;
+    box-shadow: 2px 2px 2px 2px hsl(0,0%,81%);
+    
+}
+#one
+{
+    grid-column: 1/4;
+    background-color: rgb(235, 209, 209);
+    padding: 5px;
+    
+
+}
+#two
+{
+    grid-column: 1/2;
+    background-image: url(./image/image1.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#three
+{
+    grid-column: 2/3;
+    background-image: url(./image/image2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+#four
+{
+    grid-column: 3/4; 
+    background-image: url(./image/image3.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#five
+{
+    grid-column: 1/2;
+    background-image: url(./image/image4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+#six
+{
+    grid-column: 2/3;
+    background-image: url(./image/image5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#seven
+{
+    grid-column: 3/4;
+    background-image: url(./image/image6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#p1
+{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+/* Footer SEction */
+/* #contact{
+    position : relative;
+
+}
+#contact::before{
+content : "";
+position: absolute;
+width: 100%;
+height: 100%;
+z-index : -1;
+opacity: 0.7;
+background: url('../Project/concept-contact-us-blank-wooden-cubes-square-dice-with-symbol-email-telephone-address-placed-wood-background_44868-1254.jpg') no-repeat center center/cover;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input , #contact-box textarea{
+    width : 100%;
+    padding : 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+/* } */
+ footer{
+    background-color: black;
+    color : white;
+    padding : 9px 20px;
+}
+#footer{
+    position : relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('./aaron-burden-AXqMy8MSSdk-unsplash.jpg' ) no-repeat center center/cover;
+    height: 260px;
+}
+#footer{
+
+}
+#journey h3{font-size: 1.4rem;
+    padding: 43px;
+    margin-top: -32px;
+    margin-left: 75px;
+    color : black;
+
+}
+#journey h1{
+    font-size : 1.8rem;
+    margin-left : 100px;
+    /* padding:10px; */
+    margin-top:-10px;
+}
+#footer #journey .btn{
+    padding: 6px 2px;
+    border: 2px solid #29d9d5;
+    background-color: brown;
+    color: #29d9d5;
+    margin: 10px;
+    font-size: 0.8rem;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 232px;
+}
+
+#last{
+    display: flex;
+    height : 250px;
+    background-color: black;
+}
+.last1{
+    border : 2px solid red;
+    height : 100px;
+    width : 100px;
+}
